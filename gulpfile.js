@@ -7,7 +7,7 @@ const less = require('gulp-less');
 
 gulp.task('css', function(){
 
-	gulp.src('./src/precss/styles.less')
+	gulp.src('./precss/styles.less')
 		// .pipe(sourcemaps.init())
         .pipe(less())
 		.pipe(autoprefixer({
@@ -17,22 +17,22 @@ gulp.task('css', function(){
         .on('error', console.error.bind(console))
         // .pipe(cleanCSS())
         // .pipe(sourcemaps.write('.'))
-		.pipe(gulp.dest('./src/css'))
+		.pipe(gulp.dest('./css'))
 		.pipe(browserSync.reload({
             stream: true
         }));
 });
 
 gulp.task('watch', ['browserSync'], function(){
-	gulp.watch('./src/precss/**/*.less', ['css']);
-	gulp.watch('./src/index.html', browserSync.reload);
+	gulp.watch('./precss/**/*.less', ['css']);
+	gulp.watch('./index.html', browserSync.reload);
 
 });
 
 gulp.task('browserSync', function () {
     browserSync.init({
         server: {
-            baseDir: './src'
+            baseDir: './'
         }
     });
 });
