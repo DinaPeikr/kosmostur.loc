@@ -118,3 +118,44 @@ section {
 body {
   background: #cecece;
 }
+.link {
+  text-decoration: none;
+}
+header .user {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+header .user__menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+header .user__menu_img {
+  width: 16px;
+  height: 14px;
+}
+header .user__social {
+  margin-left: auto;
+}
+header .user__social_img {
+  width: 23px;
+  height: 14px;
+}
+.logo .logo__img {
+  width: 90px;
+  height: 65px;
+}
+.logo .logo-red {
+  fill: #ff0000;
+}
