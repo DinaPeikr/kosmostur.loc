@@ -10,75 +10,100 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header class="wrapper">
-    <div class="user">
+<header>
+    <div class="user wrapper">
         <ul class="user__menu">
             <li class="user__menu_item">
                 <a href="#" class="link user__menu_link">
-                    <img src="img/svg/signin.svg" alt="enter" class="user__menu_img">
+                    <svg class="user__menu_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                        <use xlink:href="img/svg/signin.svg#signin"></use>
+                    </svg>
                     Вход
                 </a>
             </li>
             <li class="user__menu_item">
                 <a href="#" class="link user__menu_link">
-                    <img src="img/svg/heart.svg" alt="favorite" class="user__menu_img">
+                    <svg class="user__menu_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                        <use xlink:href="img/svg/heart.svg#heart"></use>
+                    </svg>
                     Избранное
                 </a>
             </li>
             <li class="user__menu_item">
                 <a href="#" class="link user__menu_link">
-                    <img src="img/svg/compare.svg" alt="compare" class="user__menu_img">
+                    <svg class="user__menu_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                        <use xlink:href="img/svg/compare.svg#compare"></use>
+                    </svg>
                     Сравнение
                 </a>
             </li>
         </ul>
         <div class="user__social">
-            <a href="#" class="link user__social_link user__social_link-vk">
-                <img src="img/svg/vk.svg" alt="vk" class="user__social_img">
+            <a href="#" class="link user__social_link">
+                <svg class="user__social_img user__social_img-vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 64">
+                    <use xlink:href="img/svg/vk.svg#vk"></use>
+                </svg>
             </a>
-            <a href="#" class="link user__social_link user__social_link-facebook">
-                <img src="img/svg/facebook.svg" alt="facebook" class="user__social_img">
+            <a href="#" class="link user__social_link">
+                <svg class="user__social_img user__social_img-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 64">
+                    <use xlink:href="img/svg/facebook.svg#facebook"></use>
+                </svg>
             </a>
-            <a href="#" class="link user__social_link user__social_link-twitter">
-                <img src="img/svg/twitter.svg" alt="twitter" class="user__social_img">
+            <a href="#" class="link user__social_link">
+                <svg class="user__social_img user__social_img-twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                    <use xlink:href="img/svg/twitter.svg#twitter"></use>
+                </svg>
             </a>
         </div>
     </div>
-    <div class="header">
-        <a href="#" class="link logo logo-red">
-            <img src="img/svg/logo.svg" alt="logo" class="logo__img">
+    <div class="header wrapper">
+        <a href="#" class="link logo">
+            <svg class="logo__img logo__img-violet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140">
+                <use xlink:href="img/svg/logo.svg#logo"></use>
+            </svg>
             <div class="logo__heading">
-                <p class="logo__title">Nalabuten.ah</p>
-                <p class="logo__subtitle">unrealizable dreams</p>
+                <p class="logo__heading_title logo__heading_title-violet">Kosmostur.ah</p>
+                <p class="logo__heading_subtitle logo__heading_subtitle-violet">realize your dream</p>
             </div>
 
         </a>
         <div class="header__block">
-            <div class="header__block_contact block_contact">
+            <div class="header__block_contact block__contact">
                 <address class="block__contact_phone">
-                    <img src="img/phone.svg" alt="phone">
+                    <svg class="block__contact_phone-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 64">
+                        <use xlink:href="img/svg/phone.svg#phone"></use>
+                    </svg>
                     <a href="tel:88009845594" class="link block__contact_phone-link">8(800)684-55-94</a>
                 </address>
                 <address class="block__contact_mail">
-                    <img src="img/envelope.svg" alt="envelope">
-                    <a href="mailto:info@nalabuten.ah" class="link block__contact_email-link">info@nalabuten.ah</a>
+                    <svg class="block__contact_mail-img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                        <use xlink:href="img/svg/envelope.svg#envelope"></use>
+                    </svg>
+                    <a href="mailto:info@nalabuten.ah" class="link block__contact_mail-link">info@nalabuten.ah</a>
                 </address>
             </div>
             <form method="get" class="header__block_search search">
                 <input title="Поиск" type="search" name="search" class="search__input" placeholder="Введите поисковую фразу">
-                <button type="submit" class="search__button"><img src="img/search.jpg" alt="search"></button>
+                <button type="submit" class="search__button">
+                    <svg class="search__button_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                    <use xlink:href="img/svg/search.svg#search"></use>
+                </svg>
+                </button>
             </form>
         </div>
         <div class="header__basket">
             <span class="header__basket_price">7500 р.</span>
             <a href="#" class="header__basket_link">
-                <img src="img/basket-red.svg" alt="basket-red" class="header__basket_img">
+                <!--<img src="img/basket-red.svg" alt="basket-red" class="header__basket_img">-->
+                <svg class="header__basket_img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 59 64">
+                    <use xlink:href="img/svg/shopping_cart.svg#shopping_cart"></use>
+                </svg>
             </a>
             <span class="label label__count">2</span>
         </div>
     </div>
 </header>
-<nav>
+<nav class="wrapper">
     <ul class="menu">
         <li class="menu__item"><a href="#" class="link menu__link">Главная</a></li>
         <li class="menu__item"><a href="#" class="link menu__link">Каталог</a></li>
@@ -393,12 +418,14 @@
     </aside>
 </div>
 <footer>
-    <div class="footer">
-        <a href="#" class="link  logo logo-white">
-            <img src="img/logo-white.jpg" alt="logo" class="logo_img">
-            <div class="logo_heading">
-                <p class="logo_title">Nalabuten.ah</p>
-                <p class="logo_subtitle">unrealizable dreams</p>
+    <div class="footer wrapper">
+        <a href="#" class="link  logo">
+            <svg class="logo__img logo__img-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 140">
+                <use xlink:href="img/svg/logo.svg#logo"></use>
+            </svg>
+            <div class="logo__heading">
+                <p class="logo__heading_title logo__heading_title-white">Kosmostur.ah</p>
+                <p class="logo__heading_subtitle logo__heading_subtitle-white">realize your dream</p>
             </div>
         </a>
         <div class="footer__menu">
@@ -432,8 +459,8 @@
             </ul>
         </div>
     </div>
-    <div class="copyright">
-        <small>&copy; Nalabuten.ah 2017</small>
+    <div class="copyright wrapper">
+        <small>&copy; Сайт космического путешественника «Kosmostur.ah» 2018</small>
     </div>
 </footer>
 <script defer src="js/scripts.js"></script>
