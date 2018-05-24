@@ -579,13 +579,17 @@ nav .menu__link {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   padding-top: 25px;
   padding-bottom: 25px;
+}
+@media screen and (max-width: 992px) {
+  .content {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 }
 .content main {
   width: -webkit-calc(75% - 30px);
