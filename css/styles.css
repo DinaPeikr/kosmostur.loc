@@ -392,7 +392,7 @@ button {
   font-size: 20px;
   color: #20b2aa;
   padding: 11px 31px;
-  border: 1px solid #79146c;
+  border: 1px solid #bc46ae;
   margin-top: auto;
 }
 .slider__link:visited {
@@ -403,6 +403,7 @@ button {
   color: #57e1d9;
   -webkit-box-shadow: 2px 2px 2px #cecece;
   box-shadow: 2px 2px 2px #cecece;
+  font-style: italic;
 }
 .slider__link:focus {
   outline: none;
