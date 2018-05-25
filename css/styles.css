@@ -405,7 +405,6 @@ button {
   box-shadow: 2px 2px 2px #cecece;
 }
 .slider__link:focus {
-  color: #20b2aa;
   outline: none;
 }
 .slider__link:active {
