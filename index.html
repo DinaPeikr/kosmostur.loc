@@ -114,34 +114,47 @@
 <div class="content wrapper">
     <main>
         <div class="slider">
-            <div class="slider__inner">
-                <div class="slider__arrow slider__arrow-prev">Prev</div>
-                <div class="slider__arrow slider__arrow-next">Next</div>
-                <div class="slider__items">
-                    <div class="slider__item">
-                        <img src="img/slider/slider1.jpg" alt="slider1">
-                        <h2 class="slider__heading">Labuten Cherry</h2>
-                        <h3 class="slider__subheading">Новая весенняя коллекция</h3>
-                        <p class="slider_promo"> Мы рады представить вам новую коллекцию туфель <br>
-                            от знаменитого дизайнера-модельера Кристиана </p>
-                        <a href="#" class="btn btn__red">Купить сейчас</a>
+            <div class="slider__arrow slider__arrow-prev">&lt;</div>
+            <div class="slider__arrow slider__arrow-next">&gt;</div>
+            <div class="slider__items">
+                <div class="slider__item">
+                    <div class="slider__item_inner">
+                        <div class="slider__img">
+                            <img src="img/slider/slider1.jpg" alt="slider1">
+                        </div>
+                        <div class="slider__info">
+                            <h2 class="slider__heading">Космические туры</h2>
+                            <h3 class="slider__subheading">Путешествуйте во вселенной вместе с нами</h3>
+                            <p class="slider__promo">Космические путешествия. Мы доставим вас в любую точку вселенной!</p>
+                            <a href="#" class="slider__link">Полетели ?</a>
+                        </div>
                     </div>
-                    <div class="slider__item">
-                        <img src="img/slider/slider2.jpg" alt="slider2">
-                        <h2 class="slider__heading">Labuten Cherry 2</h2>
-                        <h3 class="slider__subheading">Новая весенняя коллекция</h3>
-                        <p class="slider_promo"> Мы рады представить вам новую коллекцию туфель <br>
-                            от знаменитого дизайнера-модельера Кристиана </p>
-                        <a href="#" class="btn btn__red">Купить сейчас</a>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item_inner">
+                        <div class="slider__img">
+                            <img src="img/slider/slider2.jpg" alt="slider2">
+                        </div>
+                        <div class="slider__info">
+                            <h2 class="slider__heading">Космические туры</h2>
+                            <h3 class="slider__subheading">Путешествуйте во вселенной вместе с нами</h3>
+                            <p class="slider__promo">Космические путешествия. Мы доставим вас в любую точку вселенной! Космические путешествия. Мы доставим вас в любую точку вселенной! Космические путешествия. Мы доставим вас в любую точку вселенной!</p>
+                            <a href="#" class="slider__link">Полетели ?</a>
+                        </div>
                     </div>
-                    <div class="slider__item">
-                        <img src="img/slider/slider3.jpg" alt="slider3">
-                        <h2 class="slider__heading">Labuten Cherry 3</h2>
-                        <h3 class="slider__subheading">Новая весенняя коллекция</h3>
-                        <p class="slider_promo"> Мы рады представить вам новую коллекцию туфель <br>
-                            от знаменитого дизайнера-модельера Кристиана </p>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item_inner">
+                        <div class="slider__img">
+                            <img src="img/slider/slider3.jpg" alt="slider3">
+                        </div>
+                        <div class="slider__info">
+                            <h2 class="slider__heading">Космические туры</h2>
+                            <h3 class="slider__subheading">Путешествуйте во вселенной вместе с нами</h3>
+                            <p class="slider__promo">Космические путешествия. Мы доставим вас в любую точку вселенной!</p>
 
-                        <a href="#" class="btn btn__red">Купить сейчас</a>
+                            <a href="#" class="slider__link">Полетели ?</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -466,10 +479,14 @@
             <h4 class="footer__contact_title">Контактная информация</h4>
             <ul class="footer__contact_items">
                 <li class="footer__contact_item">
-                    <address>Телефон:8(499)654-98-79</address>
+                    <address>
+                        <a class="footer__contact_link" href="tel:84996549879">Телефон: 8(499)654-98-79</a>
+                    </address>
                 </li>
                 <li class="footer__contact_item">
-                    <address>E-mail:info@kosmostur.ah</address>
+                    <address>
+                        <a class="footer__contact_link" href="mailto: info@kosmostur.ah">E-mail: info@kosmostur.ah</a>
+                    </address>
                 </li>
                 <li class="footer__contact_item">Адрес: Млечный путь<br>
                     Солнечная система<br>
@@ -482,6 +499,8 @@
 <div class="copyright wrapper">
     <small>&copy; Сайт космического путешественника «Kosmostur.ah» 2018</small>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script defer src="js/scripts.js"></script>
 </body>
 </html>

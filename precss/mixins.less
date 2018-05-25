@@ -113,6 +113,16 @@
   @val: 100% / @columns * @n;
   margin-right: ~"calc(@{val} + @{offset_one_side})";
 }
+
+.link-modify(@color) when (lightness(@color) > 50%){
+   text-shadow: 0 0 2px @color_white;
+}
+.link-modify(@color) when (lightness(@color) < 50%){
+  text-shadow: 0 0 2px lighten(@color_black, 50%);
+}
+.link-modify(@color){
+  color: @color;
+}
 //.heading(){
 //  font-size: 35px;
 //  color: @color_black;
