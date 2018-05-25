@@ -154,11 +154,23 @@ button {
     padding: 11px 31px;
     border: 1px solid @color_primery-dark;
     margin-top: auto;
-    &:hover{
+
+    &:visited {
+      color: @color_aquamarine;
+      outline: none;
+
+    }
+    &:hover {
       color: lighten(@color_aquamarine, 20%);
       box-shadow: 2px 2px 2px @color_grey;
 
     }
+    &:focus {
+      color: @color_aquamarine;
+      outline: none;
+
+    }
+
     &:active {
       color: @color_aquamarine;
        box-shadow: inset 2px 2px 2px @color_grey;

@@ -395,10 +395,18 @@ button {
   border: 1px solid #79146c;
   margin-top: auto;
 }
+.slider__link:visited {
+  color: #20b2aa;
+  outline: none;
+}
 .slider__link:hover {
   color: #57e1d9;
   -webkit-box-shadow: 2px 2px 2px #cecece;
   box-shadow: 2px 2px 2px #cecece;
+}
+.slider__link:focus {
+  color: #20b2aa;
+  outline: none;
 }
 .slider__link:active {
   color: #20b2aa;
