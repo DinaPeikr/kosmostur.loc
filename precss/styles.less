@@ -606,7 +606,13 @@ nav {
 
     &__img {
       width: 100%;
-      padding-top: 20px;
+      margin-top: 20px;
+      border: 2px solid @color_grey;
+      transition: all .5s;
+      &:hover{
+        transform: scale(1.1, 1.1);
+      }
+
     }
     &__body {
       text-align: center;
@@ -771,11 +777,14 @@ nav {
     margin-bottom: 25px;
 
     &_img {
-      border: 1px solid @color_grey;
+      border: 5px solid @color_lightgrey;
       margin: 0 auto;
-
+      transition: all .5s;
+      //&:hover{
+      //  transform: rotateY(180deg);
+      //}
       &:hover {
-        border: 2px solid @color_grey;
+        border: 5px solid @color_grey;
       }
     }
   }

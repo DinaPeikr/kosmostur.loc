@@ -1116,7 +1116,19 @@ nav .menu__link:hover {
 }
 .content .card__img {
   width: 100%;
-  padding-top: 20px;
+  margin-top: 20px;
+  border: 2px solid #cecece;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+.content .card__img:hover {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 .content .card__body {
   text-align: center;
@@ -1375,11 +1387,15 @@ nav .menu__link:hover {
   margin-bottom: 25px;
 }
 .content .aside__adv_img {
-  border: 1px solid #cecece;
+  border: 5px solid #f4f4f4;
   margin: 0 auto;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
 }
 .content .aside__adv_img:hover {
-  border: 2px solid #cecece;
+  border: 5px solid #cecece;
 }
 footer {
   color: #ffffff;
