@@ -464,8 +464,6 @@ nav {
       top: 100%;
       .size-custom(12);
       z-index: 999;
-      //padding: 0 44px;
-
     });
     &__item {
       font-size: 1.125rem;
@@ -489,15 +487,6 @@ nav {
        }
       });
     }
-
-    //.header__menu li::after {
-    //
-    //}
-    //
-    //.header__menu li:hover::after {
-    //
-    //}
-
 
     &__link {
       display: block;
@@ -664,6 +653,9 @@ nav {
       border: none;
       outline: none;
       padding: 7px 15px;
+      &:hover{
+        background: darken(@color_primery, 20%);
+      }
       .lg-block({
         padding: 15px;
       });
