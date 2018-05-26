@@ -742,7 +742,8 @@ body {
 .header .search__input {
   padding: 10px;
   border: none;
-  outline: none;
+  outline: 0;
+  height: 100%;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -moz-box-flex: 1;
