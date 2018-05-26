@@ -114,11 +114,11 @@
   margin-right: ~"calc(@{val} + @{offset_one_side})";
 }
 
-.link-modify(@color) when (lightness(@color) > 50%){
+.link-modify(@color) when (lightness(@color) > 80%){
    text-shadow: 0 0 2px @color_white;
 }
-.link-modify(@color) when (lightness(@color) < 50%){
-  text-shadow: 0 0 2px lighten(@color_black, 50%);
+.link-modify(@color) when (lightness(@color) < 80%){
+  text-shadow: 0 0 2px lighten(@color_black, 30%);
 }
 .link-modify(@color){
   color: @color;

@@ -277,6 +277,15 @@ button {
 }
 .label {
   position: absolute;
+  text-align: center;
+}
+.label::before {
+  content: '';
+  font-size: 0;
+  width: 0;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
 }
 .label__count {
   top: -10px;
@@ -284,9 +293,11 @@ button {
   background: #000000;
   color: #ffffff;
   border-radius: 50%;
-  padding: 0 6px;
+  width: 24px;
+  height: 24px;
+  font-size: 0.875rem;
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 500;
 }
 .slider {
   position: relative;
@@ -455,7 +466,8 @@ button {
   outline: none;
 }
 .slider__link:hover {
-  color: #57e1d9;
+  text-shadow: 0 0 2px #4d4d4d;
+  color: #ff4040;
   -webkit-box-shadow: 2px 2px 2px #cecece;
   box-shadow: 2px 2px 2px #cecece;
   font-style: italic;
@@ -536,7 +548,7 @@ body {
   color: #4e4e4e;
 }
 .user__menu_link:hover {
-  text-shadow: 0 0 2px #808080;
+  text-shadow: 0 0 2px #4d4d4d;
   color: #4e4e4e;
 }
 .user__menu_img {
@@ -567,7 +579,7 @@ body {
   padding: 0 20px;
 }
 .user__social_link:hover {
-  text-shadow: 0 0 2px #808080;
+  text-shadow: 0 0 2px #4d4d4d;
   color: #4e4e4e;
 }
 .user__social_img {
@@ -699,7 +711,7 @@ body {
   font-weight: 100;
 }
 .header .block__contact_phone-link:hover {
-  text-shadow: 0 0 2px #808080;
+  text-shadow: 0 0 2px #4d4d4d;
   color: #4e4e4e;
 }
 .header .block__contact_mail {
@@ -715,7 +727,7 @@ body {
   font-weight: 100;
 }
 .header .block__contact_mail-link:hover {
-  text-shadow: 0 0 2px #808080;
+  text-shadow: 0 0 2px #4d4d4d;
   color: #4e4e4e;
 }
 .header .search__input {
@@ -1068,10 +1080,22 @@ nav .menu__link:hover {
 .content .promo__link_sale {
   color: #bc46ae;
 }
+.content .promo__link_sale:hover {
+  text-shadow: 0 0 2px #4d4d4d;
+  color: #bc46ae;
+}
 .content .promo__link_lowprice {
   color: #ff4040;
 }
+.content .promo__link_lowprice:hover {
+  text-shadow: 0 0 2px #4d4d4d;
+  color: #ff4040;
+}
 .content .promo__link_stock {
+  color: #20b2aa;
+}
+.content .promo__link_stock:hover {
+  text-shadow: 0 0 2px #4d4d4d;
   color: #20b2aa;
 }
 .content .promo__img {
@@ -1080,13 +1104,13 @@ nav .menu__link:hover {
   margin-right: 10px;
 }
 .content .promo__img_sale {
-  fill: #bc46ae;
+  fill: currentColor;
 }
 .content .promo__img_lowprice {
-  fill: #ff4040;
+  fill: currentColor;
 }
 .content .promo__img_stock {
-  fill: #20b2aa;
+  fill: currentColor;
 }
 .content .promo__text {
   font-size: 0.875rem;
@@ -1105,14 +1129,22 @@ nav .menu__link:hover {
   color: #ffffff;
   font-size: 0.75rem;
   border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.content .card .icon::before {
+  content: '';
+  font-size: 0;
+  width: 0;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
 }
 .content .card .icon__new {
   background: #20b2aa;
-  padding: 12px 8px;
 }
 .content .card .icon__sale {
   background: #ff4040;
-  padding: 12px 5px;
 }
 .content .card__img {
   width: 100%;
@@ -1373,14 +1405,15 @@ nav .menu__link:hover {
   color: #79146c;
 }
 .content .aside__menu_link:hover {
-  text-shadow: 0 0 2px #808080;
+  text-shadow: 0 0 2px #4d4d4d;
   color: #79146c;
+  color: #bc46ae;
 }
 .content .aside__menu_img {
   width: 15px;
   height: 15px;
   margin-right: 15px;
-  fill: #79146c;
+  fill: currentColor;
 }
 .content .aside__adv {
   display: block;
