@@ -516,6 +516,15 @@ body {
 .user.wrapper {
   background: #f4f4f4;
 }
+@media screen and (max-width: 720px) {
+  .user {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
 .user__menu {
   display: -webkit-box;
   display: -webkit-flex;
