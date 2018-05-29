@@ -1,0 +1,2 @@
+# kosmostur.loc
+kosmos tur
