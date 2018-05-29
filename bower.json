@@ -1,0 +1,21 @@
+{
+  "name": "kosmostur",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Dina Peikr <divo1peikr@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/DinaPeikr/kosmostur.loc",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.8.1",
+    "jquery": "^3.3.1"
+  }
+}
