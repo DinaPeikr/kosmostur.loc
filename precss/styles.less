@@ -25,8 +25,6 @@ button, input, textarea {
   -webkit-appearance: none;
 }
 
-
-
 .logo {
   display: flex;
   flex-wrap: wrap;
@@ -49,7 +47,7 @@ button, input, textarea {
       text-transform: uppercase;
       &-violet {
         color: @color_black;
-        &:hover{
+        &:hover {
           .link-modify(@color_black);
           color: @color_primery;
         }
@@ -57,7 +55,7 @@ button, input, textarea {
       }
       &-white {
         color: @color_white;
-        &:hover{
+        &:hover {
           .link-modify(@color_white);
         }
       }
@@ -66,15 +64,15 @@ button, input, textarea {
       font-size: 0.875rem;
       &-violet {
         color: @color_mainText;
-        &:hover{
+        &:hover {
           .link-modify(@color_mainText);
         }
       }
       &-white {
         color: @color_white;
-        &:hover{
-        .link-modify(@color_white);
-      }
+        &:hover {
+          .link-modify(@color_white);
+        }
       }
     }
   }
@@ -600,7 +598,7 @@ nav {
       transition: all .5s;
       &:hover {
         transform: scale(1.05, 1.05);
-        box-shadow:  5px 5px 15px rgba(0,0,0,.5);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
       }
 
     }
@@ -697,9 +695,7 @@ nav {
       padding: 10px;
       display: flex;
       flex-direction: column;
-      .lg-block({
-        margin-top: 15px; margin-bottom: 15px;
-      });
+      .lg-block({ margin-top: 15px; margin-bottom: 15px; });
     }
   }
   .discount {
@@ -723,9 +719,7 @@ nav {
       padding: 10px;
       display: flex;
       flex-direction: column;
-      .lg-block({
-        margin-top: 15px; margin-bottom: 15px;
-      });
+      .lg-block({ margin-top: 15px; margin-bottom: 15px; });
     }
   }
   aside {
