@@ -465,6 +465,7 @@ textarea {
   padding: 11px 31px;
   border: 1px solid #bc46ae;
   margin-top: auto;
+  margin-bottom: 10px;
 }
 .slider__link:visited {
   color: #20b2aa;
@@ -473,8 +474,8 @@ textarea {
 .slider__link:hover {
   text-shadow: 0 0 2px #808080;
   color: #ff4040;
-  -webkit-box-shadow: 2px 2px 2px #cecece;
-  box-shadow: 2px 2px 2px #cecece;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   font-style: italic;
 }
 .slider__link:focus {
@@ -482,8 +483,8 @@ textarea {
 }
 .slider__link:active {
   color: #20b2aa;
-  -webkit-box-shadow: inset 2px 2px 2px #cecece;
-  box-shadow: inset 2px 2px 2px #cecece;
+  -webkit-box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 html {
   overflow-x: hidden;
