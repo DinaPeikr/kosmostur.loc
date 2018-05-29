@@ -19,7 +19,7 @@ img {
   display: block;
 }
 
-button {
+button, input, textarea {
   -webkit-appearance: none;
 }
 
@@ -38,10 +38,10 @@ button {
     }
   }
   &__heading {
+    font-family: @font_Roboto;
+    font-weight: @font_weight;
     padding-left: 10px;
     &_title {
-      font-family: @font_Roboto;
-      font-weight: @font_weight-thin;
       font-size: 1.125rem;
       text-transform: uppercase;
       &-violet {
@@ -52,8 +52,6 @@ button {
       }
     }
     &_subtitle {
-      font-family: @font_Roboto;
-      font-weight: @font_weight;
       font-size: 0.875rem;
       &-violet {
         color: @color_mainText;
@@ -228,22 +226,24 @@ body {
     &_item {
       font-size: 0.875rem;
       font-family: @font_Roboto;
-      font-weight: @font_weight-thin;
+      font-weight: @font_weight;
       .sm-block({ margin: 5px 0; });
     }
     &_link {
-      display: block;
+      display: flex;
+      align-items: center;
       padding: 0 20px;
       border-right: 1px solid @color_grey;
       color: @color_mainText;
       &:hover {
         .link-modify(@color_mainText);
+        color: @color_primery;
       }
     }
     &_img {
       width: 16px;
       height: 14px;
-      fill: @color_mainText;
+      fill: currentColor;
       margin-right: 5px;
     }
   }
@@ -263,6 +263,9 @@ body {
       width: 23px;
       height: 14px;
       fill: @color_mainText;
+      &:hover {
+        fill: @color_primery;
+      }
       &-vk {
 
       }
@@ -286,7 +289,7 @@ header {
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: @font_Roboto;
-  font-weight: @font_weight-thin;
+  font-weight: @font_weight;
   &__logo {
     .col();
     .size(3);
@@ -317,15 +320,17 @@ header {
   .block__contact {
 
     &_phone {
-
+      display: flex;
+      align-items: center;
       &-img {
         width: 14px;
         height: 14px;
         fill: @color_primery;
+        margin-right: 5px;
       }
       &-link {
         color: @color_mainText;
-        font-weight: @font_weight-thin;
+        font-weight: @font_weight;
         &:hover {
           .link-modify(@color_mainText);
         }
@@ -333,14 +338,17 @@ header {
     }
     &_mail {
       margin-left: 20px;
+      display: flex;
+      align-items: center;
       &-img {
         width: 18px;
         height: 14px;
         fill: @color_primery;
+        margin-right: 5px;
       }
       &-link {
         color: @color_mainText;
-        font-weight: @font_weight-thin;
+        font-weight: @font_weight;
         &:hover {
           .link-modify(@color_mainText);
         }
@@ -574,7 +582,8 @@ nav {
       border: 2px solid @color_grey;
       transition: all .5s;
       &:hover {
-        transform: scale(1.1, 1.1);
+        transform: scale(1.05, 1.05);
+        box-shadow:  5px 5px 15px rgba(0,0,0,.5);
       }
 
     }
@@ -629,20 +638,23 @@ nav {
         cursor: pointer;
       }
       &__basket {
+        display: flex;
+        align-items: center;
         border-right: 1px solid @color_white;
         width: 100%;
         &_img {
           width: 14px;
           height: 14px;
           fill: @color_white;
+          margin-right: 7px;
         }
       }
       &__fastBuy {
-
         &_img {
           width: 8px;
           height: 14px;
           fill: @color_white;
+
         }
       }
     }
@@ -717,7 +729,8 @@ nav {
       background: @color_lightgrey;
     }
     &_link {
-      display: block;
+      display: flex;
+      align-items: center;
       padding: 13px;
       color: @color_primery-dark;
       &:hover {
@@ -742,6 +755,7 @@ nav {
       transition: all .5s;
       &:hover {
         border: 5px solid @color_grey;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
       }
     }
   }
@@ -773,11 +787,11 @@ footer {
     .size-xs(12);
     .md-block({ margin-bottom: 20px; });
     font-family: @font_Roboto;
-    font-weight: @font_weight-thin;
+    font-weight: @font_weight;
     &_title {
       font-size: 1.125rem;
       padding-bottom: 10px;
-      font-weight: @font_weight-thin;
+      font-weight: @font_weight;
       &::after {
         content: "";
         display: block;
@@ -808,11 +822,11 @@ footer {
     .size-xs(12);
     .md-block({ margin-bottom: 20px; });
     font-family: @font_Roboto;
-    font-weight: @font_weight-thin;
+    font-weight: @font_weight;
     &_title {
       font-size: 1.125rem;
       padding-bottom: 10px;
-      font-weight: @font_weight-thin;
+      font-weight: @font_weight;
 
       &::after {
         content: "";
@@ -843,11 +857,11 @@ footer {
     .size-xs(12);
     .md-block({ margin-bottom: 20px; });
     font-family: @font_Roboto;
-    font-weight: @font_weight-thin;
+    font-weight: @font_weight;
     &_title {
       font-size: 1.125rem;
       padding-bottom: 10px;
-      font-weight: @font_weight-thin;
+      font-weight: @font_weight;
       &::after {
         content: "";
         display: block;
@@ -865,7 +879,7 @@ footer {
       padding: 5px 0;
     }
     &_link {
-      font-weight: @font_weight-thin;
+      font-weight: @font_weight;
       &:hover {
         .link-modify(@color_white);
       }
