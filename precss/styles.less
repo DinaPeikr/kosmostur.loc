@@ -567,7 +567,6 @@ nav {
   .card {
     text-align: center;
     .icon {
-      align-self: flex-start;
       margin-top: -10px;
       margin-left: -10px;
       color: @color_white;
@@ -597,7 +596,7 @@ nav {
       border: 2px solid @color_grey;
       transition: all .5s;
       &:hover {
-        transform: scale(1.05, 1.05);
+        //transform: scale(1.05, 1.05);
         box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
       }
 
@@ -689,7 +688,7 @@ nav {
     &__card {
       .col();
       .size(3);
-      .size-lg(6);
+      .size-md(6);
       .size-sm(12);
       border: 1px solid @color_grey;
       padding: 10px;
@@ -876,7 +875,6 @@ footer {
     &_title {
       font-size: 1.125rem;
       padding-bottom: 10px;
-      //font-weight: @font_weight;
       &::after {
         content: "";
         display: block;
@@ -894,7 +892,6 @@ footer {
       padding: 5px 0;
     }
     &_link {
-      //font-weight: @font_weight;
       &:hover {
         .link-modify(@color_white);
       }

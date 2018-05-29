@@ -1186,9 +1186,6 @@ nav .menu__link:hover {
   text-align: center;
 }
 .content .card .icon {
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
   margin-top: -10px;
   margin-left: -10px;
   color: #ffffff;
@@ -1221,11 +1218,6 @@ nav .menu__link:hover {
   transition: all .5s;
 }
 .content .card__img:hover {
-  -webkit-transform: scale(1.05, 1.05);
-  -moz-transform: scale(1.05, 1.05);
-  -ms-transform: scale(1.05, 1.05);
-  -o-transform: scale(1.05, 1.05);
-  transform: scale(1.05, 1.05);
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
@@ -1359,7 +1351,7 @@ nav .menu__link:hover {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
   .content .novelty__card {
     width: -webkit-calc(50% - 30px);
     width: -moz-calc(50% - 30px);
