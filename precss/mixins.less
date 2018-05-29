@@ -1,3 +1,17 @@
+.font-face(@family, @filename: @family, @weight: normal, @style: normal){
+  @font-face {
+    font-family: @font_Roboto;
+    src: url('../fonts/@{filename}.eot');
+    src: url('../fonts/@{filename}.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/@{filename}.woff2') format('woff2'),
+    url('../fonts/@{filename}.woff') format('woff'),
+    url('../fonts/@{filename}.ttf') format('truetype'),
+    url('../fonts/@{filename}.svg#@{filename}') format('svg');
+    font-weight: @font_weight;
+    font-style: @font-style;
+  }
+}
+
 .container{
   max-width: 1280px;
   margin: 0 auto;
@@ -125,7 +139,5 @@
 .link-modify(@color) when (lightness(@color) < 80%){
   text-shadow: 0 0 2px lighten(@color_black, 50%);
 }
-.link-modify(@color){
-  color: @color;
-}
+//.link-modify(@color);
 
