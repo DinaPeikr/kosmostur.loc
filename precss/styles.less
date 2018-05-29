@@ -44,20 +44,36 @@ button, input, textarea {
     &_title {
       font-size: 1.125rem;
       text-transform: uppercase;
+
       &-violet {
         color: @color_black;
+        &:hover{
+          .link-modify(@color_black);
+          color: @color_primery;
+        }
+
       }
       &-white {
         color: @color_white;
+        &:hover{
+          .link-modify(@color_white);
+        }
+
       }
     }
     &_subtitle {
       font-size: 0.875rem;
       &-violet {
         color: @color_mainText;
+        &:hover{
+          .link-modify(@color_mainText);
+        }
       }
       &-white {
         color: @color_white;
+        &:hover{
+        .link-modify(@color_white);
+      }
       }
     }
   }
@@ -184,7 +200,7 @@ button, input, textarea {
       .link-modify(@color_orange);
       color: @color_orange;
       box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
-      font-style: italic;
+      transform: skew(-20deg);
     }
     &:focus {
       outline: none;

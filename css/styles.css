@@ -268,7 +268,16 @@ textarea {
 .logo__heading_title-violet {
   color: #000000;
 }
+.logo__heading_title-violet:hover {
+  text-shadow: 0 0 2px #808080;
+  color: #000000;
+  color: #bc46ae;
+}
 .logo__heading_title-white {
+  color: #ffffff;
+}
+.logo__heading_title-white:hover {
+  text-shadow: 0 0 2px #ffffff;
   color: #ffffff;
 }
 .logo__heading_subtitle {
@@ -277,7 +286,15 @@ textarea {
 .logo__heading_subtitle-violet {
   color: #4e4e4e;
 }
+.logo__heading_subtitle-violet:hover {
+  text-shadow: 0 0 2px #808080;
+  color: #4e4e4e;
+}
 .logo__heading_subtitle-white {
+  color: #ffffff;
+}
+.logo__heading_subtitle-white:hover {
+  text-shadow: 0 0 2px #ffffff;
   color: #ffffff;
 }
 .label {
@@ -476,7 +493,11 @@ textarea {
   color: #ff4040;
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-  font-style: italic;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
 }
 .slider__link:focus {
   outline: none;
