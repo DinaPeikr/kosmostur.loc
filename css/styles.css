@@ -1227,6 +1227,11 @@ nav .menu__link:hover {
   transition: all .5s;
 }
 .content .card__img:hover {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
   -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
