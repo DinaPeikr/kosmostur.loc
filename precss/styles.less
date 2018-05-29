@@ -485,12 +485,15 @@ nav {
 }
 
 .content {
-  display: flex;
-  flex-wrap: wrap;
+  //display: flex;
+  //flex-wrap: wrap;
+  .row-flex();
+  justify-content: center;
   .md-block({ justify-content: center; });
   padding-top: 25px;
   padding-bottom: 25px;
   main {
+    .col();
     .size(9);
     .size-md(12);
     order: 2;
@@ -722,6 +725,7 @@ nav {
     }
   }
   aside {
+    .col();
     .size(3);
     .size-md(12);
     order: 1;

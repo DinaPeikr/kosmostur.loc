@@ -1031,6 +1031,13 @@ nav .menu__link:hover {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -1044,6 +1051,8 @@ nav .menu__link:hover {
   }
 }
 .content main {
+  word-wrap: break-word;
+  margin-right: 15px;
   width: -webkit-calc(75% - 30px);
   width: -moz-calc(75% - 30px);
   width: calc(75% - 30px);
@@ -1440,6 +1449,8 @@ nav .menu__link:hover {
   }
 }
 .content aside {
+  word-wrap: break-word;
+  margin-left: 15px;
   width: -webkit-calc(25% - 30px);
   width: -moz-calc(25% - 30px);
   width: calc(25% - 30px);
