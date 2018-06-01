@@ -208,8 +208,7 @@ section {
 }
 @font-face {
   font-family: 'Roboto';
-  src: url('../fonts/Roboto-Regular.eot');
-  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -331,7 +330,7 @@ textarea {
   position: absolute;
   top: 50%;
   margin-top: -12px;
-  color: #cecece;
+  color: #4e4e4e;
   font-size: 1.5625rem;
   z-index: 1;
   opacity: .8;
