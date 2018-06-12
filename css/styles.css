@@ -1364,7 +1364,7 @@ nav .menu__link:hover {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .content .novelty__card {
     width: -webkit-calc(50% - 30px);
     width: -moz-calc(50% - 30px);
